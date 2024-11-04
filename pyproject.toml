@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "todo-api"
+version = "0.1.0"
+description = "A simple to-do list API for managing tasks with FastAPI and SQLAlchemy"
+authors = ["Your Name <you@example.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11"
+fastapi = "^0.115.4"
+SQLAlchemy = "^2.0.36"
+mysql-connector-python = "^9.1.0"
+uvicorn = "^0.32.0"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+black = "^24.10.0"
+mypy = "^1.13.0"
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
