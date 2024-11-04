@@ -5,7 +5,7 @@ from datetime import datetime
 class ToDo(Base):
     __tablename__= "todos"
 
-     id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
     description = Column(String, nullable=True)
     date_created = Column(DateTime, default=datetime.utcnow)
