@@ -5,14 +5,12 @@ from typing import Optional
 class TodoBase(BaseModel):
     name: str
     description: Optional[str]=None
-    due_date: Optional
-class TodoCreate(TodoBase):
-    pass  # No additional fields needed for creation
 
+class TodoCreate(TodoBase):
+    pass  
 class TodoResponse(TodoBase):
     id: int
-    created_at: datetime
-    completed: bool
-
+    name: str
+    date_created: datetime
     class Config:
-        orm_mode = True  # Allow compatibility with ORM models
+        orm_mode = True  
